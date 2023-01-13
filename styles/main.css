@@ -1,0 +1,284 @@
+/* common style */
+* {
+    margin: 0;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+    background-color: #F3F1FF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner-container {
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* header section */
+
+.header {
+    background-color: #562EFF;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    height: 94px;
+}
+
+.nav-title {
+    display: flex;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.nav-items ul {
+    display: flex;
+}
+
+.nav-items ul a {
+    text-decoration: none;
+    margin: 35px 36px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.nav-title img {
+    Width: 40.42px;
+    Height: 51px;
+}
+
+.nav-title h4 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-left: 15.58px;
+}
+
+.nav-items img {
+    margin: 32px;
+}
+
+/* top Player style */
+.banner-container {
+    border-radius: 5px;
+}
+
+.top-players {
+    background-color: #FFFFFF;
+    margin-top: 46px;
+    padding: 23px 48px;
+}
+
+.section title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: #562EFF;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+    margin-right: 16px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    margin-bottom: 29px;
+}
+
+.player h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+}
+
+/* blog styles */
+
+.blog {
+    display: flex;
+    margin-top: 31px;
+}
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.blog-info h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.blog-info p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #9F9F9F;
+}
+
+.blog-author {
+    text-decoration: none;
+    color: #562EFF;
+}
+
+.thumbnail img {
+    width: 177px;
+    height: 117px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 79px;
+    margin: 0 45px;
+}
+
+/* course styles */
+.container {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin: 11px 885px 28px;
+}
+
+.course-title {
+    padding: 23px 0 0 33px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #562EFF;
+}
+
+.course-pacage {
+    display: flex;
+}
+
+.single-pacage {
+    margin: 11px 35px 22px 28px;
+    padding: 13px 17px 0 11px;
+    box-shadow: #9F9F9F;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.single-pacage img {
+    width: 224px;
+    height: 104px;
+}
+
+.course-name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.single-pacage p {
+    font-size: 14.5px;
+    font-weight: 400;
+    color: #ED6B4F;
+}
+
+.course-cariculam {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.number-rating {
+    margin: 13px 30px 21px 11px;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+}
+
+.fa-start {
+    font-size: 12px;
+}
+
+.course-time {
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+}
+
+.course-time i {
+    Width: 20.03px;
+    Height: 20.03px;
+    color: #FF4A60;
+}
+
+.course-time span {
+    font-weight: 600;
+    font-size: 14.6913px;
+    color: #FF4A60;
+    padding: 1px;
+}
+
+/*.................... 
+media querries
+..................... */
+
+/* Mobile device */
+
+@media screen and (max-width: 668px) {
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        /* width: 100%; */
+    }
+
+    .player {
+        flex-direction: column;
+    }
+
+    .banner-container {
+        width: 100%;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .thumbnail img {
+        width: 100%;
+    }
+
+    .course-pacage {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        flex-direction: column-reverse
+    }
+}
